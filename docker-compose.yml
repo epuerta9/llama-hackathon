@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+
+
+  #for local development we don't need the image directly.Uncomment if you want to use the image you built and choose local as env
+  kitchenai:
+    # image: kitchenai-app:latest
+    image: kitchenai-app:latest
+    # container_name: kitchenai-app-remote
+    ports:
+    - "8000:8000"
+    network_mode: host
+    env_file:
+      - .env
+    volumes:
+      - chroma_db:/app/chroma_db
+      - sqlite:/app/.kitchenai
+
+
+
+volumes:
+  chroma_db:
+    driver: local
+  sqlite:
+    driver: local
