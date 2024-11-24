@@ -10,6 +10,16 @@ install requirements
 
 `pip install -r requirements.txt`
 
+in a different terminal, clone the right kitchenai branch 
+
+`git clone https://github.com/epuerta9/kitchenai/tree/meta-hackathon`
+
+directly install from the demo venv 
+
+`pip install -e <path to your kitchenai branch>`
+
+now you can use the new kitchenai features 
+
 
 
 ## Notebook
