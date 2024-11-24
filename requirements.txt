@@ -114,7 +114,6 @@ jsonschema-specifications==2024.10.1
 jupyter_client==8.6.3
 jupyter_core==5.7.2
 jupyterlab_pygments==0.3.0
--e git+ssh://git@github.com/epuerta9/kitchenai.git@b9085379700ddbf0159498ade61530b7c0c7572f#egg=kitchenai
 kubernetes==31.0.0
 llama-cloud==0.1.4
 llama-index==0.11.20
